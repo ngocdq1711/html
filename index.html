@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>下载导航页面</title>
+    <style>
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            line-height: 2.3
+        }
+
+        a {
+            color: #20a53a
+        }
+    </style>
+    <script src="https://client.crisp.chat/l.js" async=""></script>
+    <style id="mttstyle">
+        #mttContainer {
+            left: 0 !important;
+            top: 0 !important;
+            width: 1000px !important;
+            margin: 0px !important;
+            margin-left: -500px !important;
+            position: fixed !important;
+            z-index: 100000200 !important;
+            background: none !important;
+            pointer-events: none !important;
+            display: inline-block !important;
+            visibility: visible !important;
+            white-space: pre-line;
+        }
+
+        .tippy-box[data-theme~="custom"],
+        .tippy-content * {
+            font-size: 14px !important;
+            text-align: center !important;
+            overflow-wrap: break-word !important;
+            color: #ffffffff !important;
+            font-family:
+                -apple-system, BlinkMacSystemFont,
+                "Segoe UI", "Roboto", "Oxygen",
+                "Ubuntu", "Cantarell", "Fira Sans",
+                "Droid Sans", "Helvetica Neue", sans-serif !important;
+            white-space: pre-line;
+        }
+
+        .tippy-box[data-theme~="custom"] {
+            max-width: 200px !important;
+            backdrop-filter: blur(4px) !important;
+            background-color: #000000b8 !important;
+            border: 1px solid #ffffff00;
+        }
+
+        [data-tippy-root] {
+            display: inline-block !important;
+            visibility: visible !important;
+            position: absolute !important;
+        }
+
+        .tippy-box[data-theme~='custom'][data-placement^='top']>.tippy-arrow::before {
+            border-top-color: #000000b8 !important;
+        }
+
+        .tippy-box[data-theme~='custom'][data-placement^='bottom']>.tippy-arrow::before {
+            border-bottom-color: #000000b8 !important;
+        }
+
+        .tippy-box[data-theme~='custom'][data-placement^='left']>.tippy-arrow::before {
+            border-left-color: #000000b8 !important;
+        }
+
+        .tippy-box[data-theme~='custom'][data-placement^='right']>.tippy-arrow::before {
+            border-right-color: #000000b8 !important;
+        }
+
+        .mtt-highlight {
+            background-color: #21dc6d40 !important;
+            position: absolute !important;
+            z-index: 100000100 !important;
+            pointer-events: none !important;
+            display: inline !important;
+            border-radius: 3px !important;
+        }
+
+        .mtt-image {
+            width: 180px !important;
+            border-radius: 3px !important;
+        }
+
+        .ocr_text_div {
+            position: absolute;
+            opacity: 0.5;
+            color: transparent !important;
+            border: 2px solid CornflowerBlue;
+            background: none !important;
+            border-radius: 3px !important;
+        }
+    </style>
+    <style id="mttstyleSubtitle">
+        #ytp-caption-window-container .ytp-caption-segment {
+            cursor: text !important;
+            user-select: text !important;
+            font-family:
+                -apple-system, BlinkMacSystemFont,
+                "Segoe UI", "Roboto", "Oxygen",
+                "Ubuntu", "Cantarell", "Fira Sans",
+                "Droid Sans", "Helvetica Neue", sans-serif !important;
+        }
+
+        .caption-visual-line {
+            display: flex !important;
+            align-items: stretch !important;
+        }
+
+        .captions-text .caption-visual-line:first-of-type:after {
+            content: '⣿⣿';
+            background-color: #000000b8;
+            display: inline-block;
+            vertical-align: top;
+            opacity: 0;
+            transition: opacity 0.7s ease-in-out;
+        }
+
+        .captions-text:hover .caption-visual-line:first-of-type:after {
+            opacity: 1;
+        }
+
+        .ytp-pause-overlay {
+            display: none !important;
+        }
+
+        .ytp-expand-pause-overlay .caption-window {
+            display: block !important;
+        }
+    </style>
+    <link href="https://client.relay.crisp.chat" rel="dns-prefetch" crossorigin="">
+    <link href="https://client.crisp.chat" rel="preconnect" crossorigin="">
+    <script src="https://client.crisp.chat/static/javascripts/client.js?3654117" type="text/javascript"
+        async=""></script>
+    <link href="https://client.crisp.chat/static/stylesheets/client_default.css?3654117" type="text/css"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div style="text-align:center;">
+            <p></p>
+            <h1>APP下载导航页面</h1>
+            <p></p>
+        </div>
+        <div style="text-align:center;">
+            <h3>
+                <p><a target="_blank" href="https://panel.travel-tv.top/">OCSEN主页</a></p>
+            </h3>
+        </div>
+        <ul>
+            <hr>
+            <hr>
+
+            <h4>⚠️Android</h4>
+
+            <li><a class="btn btn-hero-primary" href="https://download-app.ptgpay.cn/download/TravelTV_4.0.0.apk"><i
+                        class="fas fa-download mr-1">Travel TV客户端-1（点击下载）</i></a></li>
+
+            <li><a class="btn btn-hero-primary" href="https://download-app.ptgpay.cn/download/OCSEN_setup_v2.3.0.apk"><i
+                        class="fas fa-download mr-1">OCSEN客户端-2（点击下载）</i></a></li>
+
+            <li><a class="btn btn-hero-primary"
+                    href="https://download-app.ptgpay.cn/download/Clash_for_Android_2.5.12.apk"><i
+                        class="fas fa-download mr-1">Clash fo Android（点击下载）</i></a></li>
+
+            <hr>
+            <hr>
+
+            <h4>⚠️Apple Iphone (IOS)</h4>
+
+            <h5>更换AppleID并下载应用</h5>
+            <div class="note">
+                <span class="info"></span>
+                <div>
+                    <div>在 App Store 登录美区 Apple ID。</div>
+                    <div>为了保护您的隐私，请勿在手机设置里直接登录，仅在 App Store 登录即可。</div>
+                    <div>登陆完成后点击下方下载会自动唤起下载。</div>
+                    <span style="color: #e04f1a;">! 登录途中会提示Apple ID 安全性。<br>! 不要点击继续
+                        (会升级双重认证导致下次登录需要手机号码验证才能登录)</span><br>
+                    <span style="color: #e04f1a;">! 点击 &gt; 其他选项 &gt; 不要升级</span>
+                    <br><br>
+                    <li>
+                        <div>
+                            <div><a class="btn btn-hero-primary" href="https://apps.apple.com/app/id1595774070"><i
+                                        class="fas fa-download mr-1">OCSEN客户端-Digilink（点击下载）</i></a>
+                                <br>
+                                <span style="color: #e04f1a;">【验证消息：OCSEN】</span>
+                                <div>
+                                    <div>
+
+                                        <div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="btn btn-hero-primary" href="https://apps.apple.com/app/id932747118"><i
+                                class="fas fa-download mr-1">Shadowrocket（点击下载）</i></a></li>
+                    <div>
+                        <div>
+
+                            <hr>
+                            <hr>
+                            <h4>⚠️Windows</h4>
+                            <li><a class="btn btn-hero-primary"
+                                    href="https://download-app.ptgpay.cn/download/TravelTV_4.0.0.exe"><i
+                                        class="fas fa-download mr-1">Travel TV客户端-1（点击下载）</i></a></li>
+                            <li><a class="btn btn-hero-primary"
+                                    href="https://download-app.ptgpay.cn/download/OCSEN_setup_3.6.7.exe"><i
+                                        class="fas fa-download mr-1">OCSEN客户端-2（点击下载）</i></a></li>
+                            <li><a class="btn btn-hero-primary"
+                                    href="https://download-app.ptgpay.cn/download/Clash_for_Windows_0.20.39.exe"><i
+                                        class="fas fa-download mr-1">Clash fo Windows（点击下载）</i></a></li>
+                            <a class="btn btn-hero-primary" href="https://download-app.ptgpay.cn/download/app.asar"><i
+                                    class="fas fa-download mr-1">汉化补丁（点击下载）</i></a>
+                            |
+                            <a class="btn btn-hero-primary"
+                                href="https://clashforwindows.org/clash-for-windows-chinese/"><i
+                                    class="fas fa-download mr-1">汉化/使用教程（点击进入）</i></a>
+                            <hr>
+                            <hr>
+                            <h4>⚠️Apple Mac（MacOS)</h4>
+                            <li><a class="btn btn-hero-primary"
+                                    href="https://download-app.ptgpay.cn/download/TravelTV_4.0.0.dmg"><i
+                                        class="fas fa-download mr-1">Travel TV客户端-1（点击下载）</i></a></li>
+                            <li><a class="btn btn-hero-primary"
+                                    href="https://download-app.ptgpay.cn/download/OCSEN_setup_3.6.7.dmg"><i
+                                        class="fas fa-download mr-1">OCSEN客户端-2（点击下载）</i></a></li>
+                            <li><a class="btn btn-hero-primary"
+                                    href="https://download-app.ptgpay.cn/download/ClashX.dmg"><i
+                                        class="fas fa-download mr-1">Clash fo Mac_OS（ClashX 点击下载）</i></a></li>
+                            <a class="btn btn-hero-primary" href="https://clashx.org/"><i
+                                    class="fas fa-download mr-1">Clash fo Mac_OS 使用教程</i></a>
+                            <br><br>
+                            <span style="color: #e04f1a;">注意：如系统提示风险则需要在“系统偏好设置-安全与隐私-通用”中赋予软件权限；</span>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <footer class="container" style="padding-bottom: 2rem;">
+        <p style="text-align: center; font-size: 15px;">
+            下载导航页面 | 返回 <a target="_blank" href="https://panel.travel-tv.top/">OCSEN主页</a> | <a target="_blank"
+                href="http://beian.miit.gov.cn/">ICP备案号：陕ICP备2022008525号</a> | <a target="_blank"
+                href="http://beian.miit.gov.cn/">VPN/CDN许可证编号：B1-20214414</a>
+        </p>
+    </footer>
+
+
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "49b4489f-2c5f-407a-afba-b1dace6c8918"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+    <div aria-live="polite" class="crisp-client">
+        <div class="cc-rukbw">
+            <div class="cc-9yvsj">
+                <style type="text/css">
+                    .crisp-client *:focus-visible {
+                        outline-color: #004AB5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-co79q {
+                        color: #FFFFFF !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-1dvce {
+                        color: #1972F5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-5t1tm {
+                        background-color: #FFFFFF !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-1q2sq {
+                        background-color: #004AB5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-62iw4 {
+                        background-color: #055EE1 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-1kgzy {
+                        background-color: #1972F5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-1kgzy *:focus-visible {
+                        outline-color: #F0F2F5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-m59gn {
+                        background-color: #EFF5FE !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-jtuj4 {
+                        background-color: #F0F2F5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-1ikmr {
+                        border-color: #FFFFFF !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-1i61z,
+                    .crisp-client .cc-1brb6 .cc-134r8:hover {
+                        border-color: #1972F5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-un6tk {
+                        border-color: rgba(25, 114, 245, 0.2) !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-weiiy {
+                        border-bottom-color: #1972F5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-18tkz::placeholder {
+                        color: #92A9C1 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-10xgc::placeholder {
+                        color: #92A9C1 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-y2afy,
+                    .crisp-client .cc-1brb6 .cc-y2afy:active,
+                    .crisp-client .cc-1brb6 .cc-1swm7:hover .cc-17cww,
+                    .crisp-client .cc-1brb6 .cc-1swm7 .cc-17cww:active {
+                        background: #004AB5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-coh7k,
+                    .crisp-client .cc-1brb6 .cc-1cx9a:hover,
+                    .crisp-client .cc-1brb6 .cc-1xhex[data-active="true"] .cc-ydjl9 {
+                        background: #0057D7 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-y2afy:hover,
+                    .crisp-client .cc-1brb6 .cc-coh7k:hover,
+                    .crisp-client .cc-1brb6 .cc-1cx9a:active {
+                        background: #0051C8 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-coh7k:active {
+                        background: #004AB5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-aoc5z:hover .cc-fajgc {
+                        background: #0057D7 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-aoc5z .cc-fajgc:active {
+                        background: #0051C8 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-f5i1a,
+                    .crisp-client .cc-1brb6 .cc-70ynx:hover .cc-iuh54,
+                    .crisp-client .cc-1brb6 .cc-70ynx .cc-iuh54:active {
+                        background: #1972F5 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-f5i1a:hover {
+                        background: #055EE1 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-f5i1a:active {
+                        background: #0057D7 !important;
+                    }
+
+                    .crisp-client .cc-1brb6 .cc-vibqn::selection,
+                    .crisp-client .cc-1brb6 .cc-vibqn *::selection {
+                        color: #1c293b !important;
+                        background-color: #E2EEFF !important;
+                    }
+                </style>
+            </div>
+            <div class="cc-k4lmp">
+                <style type="text/css">
+                    .crisp-client .cc-1brb6 {
+                        z-index: 1000000;
+                    }
+                </style>
+            </div>
+        </div>
+        <div id="crisp-chatbox" lang="en" dir="ltr" translate="no" tabindex="-1" class="cc-1brb6" data-hidden="false"
+            data-force-show="false" data-color-mode="light" data-availability="away" data-lock-maximized="false"
+            data-website-logo="false" data-last-operator-face="false" data-ongoing-operator-face="false"
+            data-availability-tooltip="true" data-hide-vacation="false" data-blocked="false" data-mobile-view="false"
+            data-full-view="false" data-small-view="false" data-large-view="true" data-has-local-messages="false"
+            data-was-availability-online="false" data-is-activity-ongoing="false" data-hide-on-away="false"
+            data-hide-on-mobile="false" data-position-reverse="false">
+            <div class="cc-1yy0g cc-1wive cc-vibqn"><a data-maximized="false" data-is-failure="false" class="cc-1m2mf"
+                    tabindex="0" role="button" aria-label="Open chat" data-pane-animate-entrance="false"
+                    data-pop="minimized:open"><span class="cc-6lwfw"><span data-id="general_entice" class="cc-1pzwe"
+                            data-with-helpdesk="false" data-is-concealed="false"><span class="cc-1ixpz"><span
+                                    class="cc-1amne cc-olo99"><span class="cc-14i7w"><span class="cc-7udqo"><span
+                                                class="cc-1x4xm cc-sdm9t" tabindex="0" role="button"></span><span
+                                                class="cc-1hjy4"><span class="cc-y90t5 cc-361jl">Questions? Chat with
+                                                    us!</span><span class="cc-1ets0"><span data-id="away"
+                                                        class="cc-ok0uk cc-olo99">Support is away</span><span
+                                                        class="cc-k2uiy"><span class="cc-x2po4"><span
+                                                                class="cc-164u5 cc-8mq05"><span
+                                                                    class="cc-1798f cc-o92tn"
+                                                                    style="background-image: url(&quot;https://image.crisp.chat/avatar/operator/f3e18292-1fc0-419d-98fb-50baf6663654/60/?1717544546036&quot;) !important;"></span></span></span><span
+                                                            class="cc-x2po4"><span class="cc-164u5 cc-8mq05"><span
+                                                                    class="cc-1798f cc-o92tn"
+                                                                    style="background-image: url(&quot;https://image.crisp.chat/avatar/operator/4a3e9443-c37c-4bea-b11f-980a374ac2e1/60/?1717544546036&quot;) !important;"></span></span></span><span
+                                                            class="cc-x2po4"><span class="cc-164u5 cc-8mq05"><span
+                                                                    class="cc-1798f cc-o92tn"
+                                                                    style="background-image: url(&quot;https://image.crisp.chat/avatar/website/49b4489f-2c5f-407a-afba-b1dace6c8918/60/?1717544546036&quot;) !important;"></span></span></span></span></span></span></span></span><span
+                                        class="cc-1xr1o"><span data-type="chat" class="cc-1djrv cc-f5i1a" tabindex="0"
+                                            role="button"><span class="cc-uxkrl cc-5t1tm"></span><span
+                                                class="cc-ggi1r cc-361jl cc-co79q">Chat with
+                                                OCSEN</span></span><!--v-if--></span></span></span></span></span><span
+                        class="cc-157aw cc-1kgzy"><span data-id="chat_closed" data-is-ongoing="false"
+                            class="cc-d73fc"><span class="cc-1bvfm"><!--v-if--></span></span></span></a></div>
+        </div>
+    </div>
+</body>
+
+</html>
